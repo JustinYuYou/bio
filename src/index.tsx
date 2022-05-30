@@ -3,13 +3,19 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { UserContext } from './globalContext';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    <App />
+    <UserContext.Provider value={{
+      name: "JJ Yu",
+      skills: ["TypeScript", "JavaScript"]
+    }}>
+      <App />
+    </UserContext.Provider>
   </React.StrictMode>
 );
 
