@@ -12,7 +12,10 @@ root.render(
   <React.StrictMode>
     <UserContext.Provider value={{
       name: "JJ Yu",
-      skills: ["TypeScript", "JavaScript"]
+      skills: ["TypeScript", "JavaScript"],
+      linkedinURL: "https://www.linkedin.com/in/yu-chen-ting",
+      githubURL: "https://github.com/JustinYuYou",
+      email: "chentingyu0117@gmail.com",
     }}>
       <App />
     </UserContext.Provider>
