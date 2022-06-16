@@ -1,33 +1,34 @@
-import React from 'react';
-import { Container, Nav, Navbar } from 'react-bootstrap';
+import React, { useContext } from 'react';
 import './App.css';
 import { BackgroundImageHeader } from './components/BackgroundImageHeader';
+import { ExperienceList } from './Experience/ExperienceList';
 import { Footer } from './components/Footer';
+import { UserContext } from './globalContext';
+import { SkillList } from './Skill/SkillList';
+import { ProjectList } from './Project/ProjectList';
+import { Overview } from './Overview/Overview';
+import { AboutMe } from './AboutMe/AboutMe';
 
 function App() {
+  const user = useContext(UserContext);
+  const skills: string[] = [];
+  const experiences: string[] = [];
+  const projects: string[] = [];
+
   return (
     <div className='main'>
-      <header>
-        <NavigationBar></NavigationBar>
-      </header>
-      <body>
-        <BackgroundImageHeader></BackgroundImageHeader>
-      </body>
+      <BackgroundImageHeader></BackgroundImageHeader>
+      <div className='main-body'>
+        <Overview></Overview>
+        <AboutMe></AboutMe>
+        <SkillList skills={skills}></SkillList>
+        <ExperienceList></ExperienceList>
+        <ProjectList></ProjectList>
+      </div>
       <Footer></Footer>
-    </div>
+
+    </div >
   );
 }
-
-
-const NavigationBar = () => <Navbar bg="light" expand="lg">
-  <Container>
-    <Navbar.Collapse id="basic-navbar-nav">
-      <Nav className="me-auto">
-        <Nav.Link href="#home">Experience</Nav.Link>
-        <Nav.Link href="#link">Project</Nav.Link>
-      </Nav>
-    </Navbar.Collapse>
-  </Container>
-</Navbar>
 
 export default App;

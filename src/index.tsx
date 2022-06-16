@@ -11,7 +11,7 @@ const root = ReactDOM.createRoot(
 root.render(
   <React.StrictMode>
     <UserContext.Provider value={{
-      name: "JJ Yu",
+      name: "Justin Yu",
       skills: ["TypeScript", "JavaScript"],
       linkedinURL: "https://www.linkedin.com/in/yu-chen-ting",
       githubURL: "https://github.com/JustinYuYou",
