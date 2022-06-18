@@ -1,0 +1,9 @@
+@use "../style.scss";
+
+#project {
+  h1 {
+    margin: 0px;
+  }
+  padding: style.$padding;
+  background-color: #25586d;
+}

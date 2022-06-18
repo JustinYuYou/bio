@@ -1,0 +1,9 @@
+@use "../style.scss";
+#experience {
+  background-color: #708daf;
+  padding: style.$padding;
+
+  h1 {
+    margin: 0;
+  }
+}
