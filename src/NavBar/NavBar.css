@@ -1,4 +1,16 @@
 .nav-bar {
   display: flex;
-  justify-content: space-between;
+
+  left: 100px;
+  padding-left: 90px;
+}
+
+a {
+  padding: 30px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+a:visited {
+  color: white;
 }

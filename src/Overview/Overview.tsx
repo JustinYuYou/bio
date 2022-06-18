@@ -3,11 +3,11 @@ export const Overview = () => {
    return (
       <div className="overview">
          <div className="overview-experience">
-            <p>{getYearsOfExp()}+</p>
+            <p className="year-exp">{getYearsOfExp()}+</p>
             <p>Years of Experience</p>
          </div>
          <div className="overview-project">
-            <p>{getNumOfCompletedProjects()}+</p>
+            <p className="complete-project">{getNumOfCompletedProjects()}+</p>
             <p>Completed Project</p>
          </div>
       </div>

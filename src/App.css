@@ -1,14 +1,6 @@
-.header-backgroundimage {
-  background-image: url("../assets/images/background_image.jpg");
-  /* Full height */
-  height: 100%;
-
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+#root {
+  color: white;
 }
 
 .main-body {
-  padding: 0px 200px;
 }

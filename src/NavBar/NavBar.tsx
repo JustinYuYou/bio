@@ -1,17 +1,23 @@
-import Link from '@mui/material/Link';
+import "./NavBar.css";
 
 export const NavBar = () => {
    return (
       <div className="nav-bar">
-         <Link href="#skill" underline="hover" component="button">
+         <a href="#about">
+            About
+         </a>
+         <a href="#skill">
             Skill
-         </Link>
-         <Link href="#experience" underline="hover" component="button">
+         </a>
+         <a href="#experience">
             Experience
-         </Link>
-         <Link href="#project" underline="hover" component="button">
+         </a>
+         <a href="#project">
             Project
-         </Link>
+         </a>
+         <a href="#Contact">
+            Contact
+         </a>
       </div>
    );
 }

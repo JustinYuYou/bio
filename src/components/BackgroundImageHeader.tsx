@@ -2,6 +2,7 @@ import React, { useContext } from 'react';
 import { UserContext } from '../globalContext';
 import { NavBar } from '../NavBar/NavBar';
 import { ContactButtons } from './ContactButton';
+import "./BackgroundImageHeader.css";
 
 export const BackgroundImageHeader = () => {
    return (
@@ -17,14 +18,15 @@ export const BackgroundImageHeader = () => {
 const IntroDescription = () => {
    const user = useContext(UserContext);
 
-   return (<div>
-      <p>
-         Hello, my name is
-      </p>
-      <h2>{user.name}</h2>
-      <p>
-         , a passionate software enginner with expereience in AWS, web development, and mobile development
-      </p>
-      <ContactButtons user={user}></ContactButtons>
-   </div>)
+   return (
+      <div className='header-description'>
+         <p>
+            Hello, my name is
+         </p>
+         <h2>{user.name}</h2>
+         <p>
+            a software enginner passionate in AWS, web development, and mobile development
+         </p>
+         <ContactButtons user={user}></ContactButtons>
+      </div>)
 }
