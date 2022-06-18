@@ -1,0 +1,25 @@
+.header-backgroundimage {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.42), rgba(0, 0, 0, 0.42)),
+    url("../../assets/images/background_image.jpg");
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  position: relative;
+}
+
+.header-description {
+  position: absolute;
+  width: 714px;
+  height: 200px;
+  left: 122px;
+  top: 100px;
+
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 48px;
+}
