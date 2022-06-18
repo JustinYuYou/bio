@@ -1,9 +1,10 @@
 @use "../font.scss";
+@use "../style.scss";
 
 .about-me {
   background-color: #212c4a;
   position: relative;
-  padding: 30px 100px;
+  padding: style.$padding;
 
   h1 {
     margin: 0;

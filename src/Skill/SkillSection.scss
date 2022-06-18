@@ -1,0 +1,19 @@
+@use "../style.scss";
+
+#skill {
+  background-color: #111a2f;
+  padding: style.$padding;
+  h1 {
+    margin: 0px;
+  }
+
+  .skill-chip-list {
+    padding: 30px 0px;
+  }
+
+  .chip {
+    font-size: 20px;
+    margin: 10px;
+    padding: 20px;
+  }
+}
